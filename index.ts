@@ -20,21 +20,17 @@ async function getVList() {
 
 async function getRequestData() {
   const vList = await getVList();
-  let titleContent = "";
   let mdContent = "";
   vList.forEach((v) => {
     const title = cutString(v.title, 35);
     const url = `https://www.bilibili.com/video/${v.bvid}`;
     const play = intToString(v.play);
     const comment = intToString(v.comment);
-    titleContent += sprintf("%s ▶️:%-3s 💬:%-3s", title, play, comment) + "\n";
-    mdContent +=
-      sprintf("[%s](%s) ▶️:%-3s 💬:%-3s", title, url, play, comment) + "\n\n";
+    mdContent += sprintf("[%s](%s) ▶️: %s 💬: %s", title, url, play, comment) + "\n\n";
   });
   return {
     description: "My Latest BiliBili videos 👇",
     files: {
-      latest_videos: { content: titleContent },
       "latest_videos.md": { content: mdContent },
     },
   };
