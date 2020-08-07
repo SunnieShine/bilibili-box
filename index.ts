@@ -26,13 +26,14 @@ async function getRequestData() {
     //const url = `https://www.bilibili.com/video/${v.bvid}`;
     const play = intToString(v.play);
     const comment = intToString(v.comment);
-    mdContent += sprintf("%-29s ▶️: %-3s 💬: %-3s", title, play, comment) + "\n\n";
+    mdContent += sprintf("%-25s ▶️: %-3s 💬: %-3s", title, play, comment) + "\n";
     //mdContent += sprintf("[%s](%s) ▶️: %s 💬: %s", title, url, play, comment) + "\n\n";
   });
   return {
     description: "My Latest BiliBili videos 👇",
     files: {
-      "latest_videos.md": { content: mdContent },
+      "latest_videos": { content: mdContent },
+      //"latest_videos.md": { content: mdContent },
     },
   };
 }
