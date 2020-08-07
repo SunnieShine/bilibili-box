@@ -3,7 +3,7 @@
   <!--
     <img width="400" src="./image/demo.png">
   -->
-  <h3 align="center">Bilibili-box</h3>
+  <h3 align="center">BiliBili-Box</h3>
   <p align="center">把你 B 站的投稿视频搬迁显示到 Pinned Gist 上！</p>
 </p>
 
@@ -36,4 +36,4 @@
 
 ## ✨ 其他
 
-还有更多类似本仓库的 pinned gist 项目，在这里: https://github.com/matchai/awesome-pinned-gists
+还有更多类似本仓库的 pinned gist 项目，例如[这个](https://github.com/matchai/awesome-pinned-gists)。
