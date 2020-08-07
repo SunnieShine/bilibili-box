@@ -30,7 +30,7 @@ async function getRequestData() {
       mdContent += "【其他】";
     }
     
-    mdContent += sprintf("👀%s   ▶️ %s   💬 %s", title, play, comment) + "\n";
+    mdContent += sprintf("👀 %s   ▶️ %s   💬 %s", title, play, comment) + "\n";
     //mdContent += sprintf("[%s](%s) ▶️: %s 💬: %s", title, url, play, comment) + "\n\n";
   });
   return {
