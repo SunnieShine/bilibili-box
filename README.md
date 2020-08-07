@@ -1,12 +1,12 @@
 <p align="center">
   <img width="400" src="./image/demo.png">
   <h3 align="center">Bilibili-box</h3>
-  <p align="center">将你的B站最新投稿显示在 pined gist。</p>
+  <p align="center">把你 B 站的投稿视频搬迁显示到 Pinned Gist 上！</p>
 </p>
 
 ---
 
-> 📌✨ 还有更多类似本仓库的 pinned-gist 项目，在这里: https://github.com/matchai/awesome-pinned-gists
+> 📌✨ 还有更多类似本仓库的 pinned gist 项目，在这里: https://github.com/matchai/awesome-pinned-gists
 
 ## Setup
 
@@ -23,7 +23,7 @@
 ### Project setup
 
 1. 复刻本仓库
-1. 编辑[环境变量](https://github.com/KeJunMao/bilibili-box/blob/master/.github/workflows/main.yml#L27-L28)文件 `.github/workflows/schedule.yml`:
+1. 编辑[环境变量](https://github.com/Sunnie-Shine/bilibili-box/blob/master/.github/workflows/main.yml#L27-L28)文件 `.github/workflows/schedule.yml`:
 
    - **UID:** B站用户标示.
    - **GIST_ID:** 你的 gist url 的 ID: `https://gist.github.com/matchai/`**`6d5f84419863089a167387da62dd7081`**.
@@ -32,4 +32,4 @@
 1. 添加以下环境变量:
    - **GH_TOKEN:** 刚刚复制好的 access token
 
-本项目受 [youtube-box](https://github.com/SinaKhalili/youtube-box) 启发，从别人家 fork 过来的（具体请参看 fork 的相关地址）。
+本项目受 [youtube-box](https://github.com/SinaKhalili/youtube-box) 启发，然后又从别人家 fork 过来的（具体请参看 fork 的相关地址）。
