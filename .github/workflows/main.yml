@@ -7,7 +7,7 @@ on:
     branches:
       - master
   schedule:
-    - cron: "13 9 * * *"
+    - cron: "17 9 * * *"
 
 jobs:
   update-gist:
