@@ -23,10 +23,11 @@ async function getRequestData() {
   let mdContent = "";
   vList.forEach((v) => {
     const title = cutString(v.title, 35);
-    const url = `https://www.bilibili.com/video/${v.bvid}`;
+    //const url = `https://www.bilibili.com/video/${v.bvid}`;
     const play = intToString(v.play);
     const comment = intToString(v.comment);
-    mdContent += sprintf("[%s](%s) ▶️: %s 💬: %s", title, url, play, comment) + "\n\n";
+    mdContent += sprintf("%35s ▶️: %-3s 💬: %-3s", title, play, comment) + "\n\n";
+    //mdContent += sprintf("[%s](%s) ▶️: %s 💬: %s", title, url, play, comment) + "\n\n";
   });
   return {
     description: "My Latest BiliBili videos 👇",
