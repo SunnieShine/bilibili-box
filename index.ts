@@ -26,9 +26,9 @@ async function getRequestData() {
     //const url = `https://www.bilibili.com/video/${v.bvid}`;
     const play = intToString(v.play);
     const comment = intToString(v.comment);
-    if (!title.includes("【")) {
-      mdContent += "【其他】";
-    }
+    //if (!title.includes("【")) {
+    //  mdContent += "【其他】";
+    //}
     
     mdContent += sprintf("%s   ▶️ %s   💬 %s", title, play, comment) + "\n";
     //mdContent += sprintf("[%s](%s) ▶️: %s 💬: %s", title, url, play, comment) + "\n\n";
