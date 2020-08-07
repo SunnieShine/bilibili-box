@@ -27,8 +27,7 @@ async function getRequestData() {
     const play = intToString(v.play);
     const comment = intToString(v.comment);
     if (!title.includes("【")) {
-      mdContent += "👀【其他】";
-      mdContent += sprintf("%s   ▶️ %s   💬 %s", title, play, comment) + "\n";
+      mdContent += sprintf("👀【其他】%s   ▶️ %s   💬 %s", title, play, comment) + "\n";
     } else {
       mdContent += sprintf("👀%s   ▶️ %s   💬 %s", title, play, comment) + "\n";
     }
