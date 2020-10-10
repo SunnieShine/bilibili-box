@@ -2,7 +2,7 @@ import config from "./config.ts";
 import { cutString, intToString } from "./utils.ts";
 import { sprintf } from "https://deno.land/x/std/fmt/printf.ts";
 
-const biliApiUrl = `https://api.bilibili.com/x/space/arc/search?mid=${config.uid}&ps=5&pn=1`;
+const biliApiUrl = `https://api.bilibili.com/x/space/arc/search?mid=${config.uid}&ps=10&pn=1`;
 const gistApiUrl = `https://api.github.com/gists/${config.gistId}`;
 interface VList {
     comment: number;
